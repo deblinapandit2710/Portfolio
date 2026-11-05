@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deblina | Exploring AI. Building for everyday life.</title>
+  <meta name="description" content="Portfolio of Deblina, a first-year B.Tech CSE (AI & ML) student at Brainware University. Exploring machine learning, pattern discovery, and accessible web design.">
+  <meta name="author" content="Deblina">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glow -->
+  <div class="bg-ambient" aria-hidden="true">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+  </div>
+
+  <!-- =========================================================================
+       Navbar
+       ========================================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Deblina Portfolio Home">
+        <span class="logo-icon-badge">D</span>
+        <span>Deblina<span class="text-gradient">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#featured" class="nav-link">Featured Project</a></li>
+          <li><a href="#projects" class="nav-link">Prototypes</a></li>
+          <li><a href="#playground" class="nav-link">K-Means Demo</a></li>
+          <li><a href="#learning" class="nav-link">What I'm Learning</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Switcher & Quick CTA) -->
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Light/Dark Theme" title="Toggle theme">
+          <span id="themeIcon">☀️</span>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm" style="display: none; @media(min-width: 640px){display: inline-flex;}">
+          <span>Let's Connect</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       Hero Section
+       ========================================================================= -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      
+      <!-- Left Column: Intro & Headline -->
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="badge badge-violet">
+            <span>✨</span> B.Tech CSE (AI & ML) • Brainware University
+          </span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I’m Deblina <span class="wave-emoji">👋</span>
+        </h1>
+
+        <p class="hero-tagline text-gradient">
+          Exploring AI. Building for everyday life.
+        </p>
+
+        <p class="hero-desc">
+          I’m curious about how machines find patterns in data and how thoughtful design can make technology more useful. Right now, I’m exploring machine learning concepts like <strong>K-means clustering</strong> and engineering web prototypes that solve everyday community challenges.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#featured" class="btn btn-primary">
+            <span>Explore Featured Project</span> →
+          </a>
+          <a href="#playground" class="btn btn-secondary">
+            <span>Try K-Means Demo</span> ⚡
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <span>Get in Touch</span> ✉️
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive Profile Portrait -->
+      <div class="hero-visual">
+        <div class="portrait-wrapper">
+          <div class="portrait-glow"></div>
+          
+          <div class="portrait-frame">
+            <img 
+              src="assets/profile.jpg" 
+              onerror="this.onerror=null; this.src='file:///C:/Users/DEBLINA/.gemini/antigravity/brain/0339c326-8e71-401e-bf12-0e3e355dc0f3/.user_uploaded/media_1793895169725.jpg';" 
+              alt="Deblina - First-Year B.Tech Student in AI and Machine Learning" 
+              class="portrait-img"
+            >
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-badge badge-top-right">
+            <span>🌱</span> First-Year Undergrad
+          </div>
+
+          <div class="floating-badge badge-bottom-left">
+            <span>🤖</span> AI & Machine Learning
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       About Me Section
+       ========================================================================= -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Background & Curiosity</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle" style="margin: 0;">
+          Connecting the mathematical elegance of machine learning with human-centered product design.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Story Card -->
+        <div class="about-card">
+          <p class="about-text">
+            I’m a first-year <strong>B.Tech CSE (AI & ML) student at Brainware University</strong>. I’ve always been drawn to the space where logic meets human empathy — asking not just what a mathematical model can calculate, but how its output can quietly improve someone’s day.
+          </p>
+
+          <p class="about-text">
+            Right now, I spend my time understanding the foundational mechanics of machine learning — like how <strong>K-means clustering</strong> groups unstructured points in high-dimensional space — while building interactive, accessible web prototypes that make information tangible and intuitive.
+          </p>
+
+          <ul class="about-highlights-list">
+            <li class="about-highlight-item">
+              <div class="highlight-icon-box">🧠</div>
+              <div class="highlight-content">
+                <h4>Pattern Discovery</h4>
+                <p>Exploring how unsupervised learning algorithms detect latent clusters without pre-existing labels.</p>
+              </div>
+            </li>
+            <li class="about-highlight-item">
+              <div class="highlight-icon-box">♿</div>
+              <div class="highlight-content">
+                <h4>Accessible & Inclusive Tech</h4>
+                <p>Designing user experiences that consider mobility aids, seniors, and neurodiverse needs from day one.</p>
+              </div>
+            </li>
+            <li class="about-highlight-item">
+              <div class="highlight-icon-box">🛠️</div>
+              <div class="highlight-content">
+                <h4>Hands-On Prototyping</h4>
+                <p>Bridging theory with working browser software using JavaScript, Leaflet maps, and modern web standards.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Fast Facts Summary Card -->
+        <div class="info-card">
+          <h3 style="font-size: 1.25rem; font-weight: 700; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1rem;">
+            Quick Snapshot
+          </h3>
+
+          <div class="info-item">
+            <div class="info-icon">🎓</div>
+            <div class="info-details">
+              <span>Program</span>
+              <strong>B.Tech in Computer Science & Engineering</strong>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">🤖</div>
+            <div class="info-details">
+              <span>Specialization</span>
+              <strong>Artificial Intelligence & Machine Learning</strong>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">🏛️</div>
+            <div class="info-details">
+              <span>Institution</span>
+              <strong>Brainware University</strong>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div class="info-details">
+              <span>Location</span>
+              <strong>West Bengal, India</strong>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">💡</div>
+            <div class="info-details">
+              <span>Current Exploration</span>
+              <strong>K-Means Clustering & Geospatial Interfaces</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Featured Project: Where Can I Sit?
+       ========================================================================= -->
+  <section class="section" id="featured">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Flagship Prototype</span>
+        <h2 class="section-title">Featured Project</h2>
+      </div>
+
+      <div class="featured-card">
+        <div class="featured-grid">
+          
+          <!-- Details Left -->
+          <div>
+            <div class="featured-header-badge">
+              <span>🗺️</span> MAP-BASED COMMUNITY ACCESSIBILITY
+            </div>
+            
+            <h3 class="featured-title">Where Can I Sit?</h3>
+            <p class="featured-tagline">A little rest, closer than you think.</p>
+
+            <p class="featured-desc">
+              Every journey deserves a seat. <strong>Where Can I Sit?</strong> is an interactive map-based prototype created to help pedestrians, commuters, seniors, and parents locate quiet, welcoming public seating nearby. Instead of simply plotting bench coordinates, it focuses on real-world human comfort criteria.
+            </p>
+
+            <!-- Why the Details Matter -->
+            <div class="details-matter-box">
+              <h4 class="details-matter-title">
+                <span>🔍</span> Why those specific details matter:
+              </h4>
+              <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 1rem;">
+                They allow people to decide whether a place truly meets their physical needs <em>before</em> they expend energy travelling there:
+              </p>
+
+              <div class="details-grid">
+                <div class="detail-pill">
+                  <span class="detail-icon">🌳</span>
+                  <div>
+                    <strong>Shade Coverage</strong>
+                    <span>Prevents heat exhaustion and sun glare during sunny hours.</span>
+                  </div>
+                </div>
+
+                <div class="detail-pill">
+                  <span class="detail-icon">🪑</span>
+                  <div>
+                    <strong>Backrests & Armrests</strong>
+                    <span>Provides vital ergonomic leverage and spine support for seniors.</span>
+                  </div>
+                </div>
+
+                <div class="detail-pill">
+                  <span class="detail-icon">♿</span>
+                  <div>
+                    <strong>Step-Free Access</strong>
+                    <span>Guarantees barrier-free entry for wheelchairs and baby strollers.</span>
+                  </div>
+                </div>
+
+                <div class="detail-pill">
+                  <span class="detail-icon">🔒</span>
+                  <div>
+                    <strong>Local & Private</strong>
+                    <span>No accounts required; location data never leaves the user's browser.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="featured-actions">
+              <a href="#" class="btn btn-primary" onclick="showToast('Live demo link placeholder. Coming soon!')">
+                <span>Open Live Demo</span> ↗
+              </a>
+              <a href="#" class="btn btn-secondary" onclick="showToast('Source repository placeholder. Coming soon!')">
+                <span>View Source Code</span> 💻
+              </a>
+              <button class="btn btn-outline" onclick="openProjectModal('where-can-i-sit')">
+                <span>Read Full Case Study</span> 📖
+              </button>
+            </div>
+          </div>
+
+          <!-- Mock Interactive Preview Right -->
+          <div class="featured-preview-card">
+            <div class="preview-bar">
+              <div class="preview-dots">
+                <span class="preview-dot dot-red"></span>
+                <span class="preview-dot dot-yellow"></span>
+                <span class="preview-dot dot-green"></span>
+              </div>
+              <span class="preview-url">wherecanisit.app/explore</span>
+            </div>
+
+            <div class="preview-body">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">Active Filters</span>
+                <span class="badge badge-teal" style="font-size: 0.75rem;">Interactive Map</span>
+              </div>
+
+              <!-- Interactive Mock Filter Pills -->
+              <div class="mock-filters-row">
+                <button class="mock-filter-btn active">🌿 Shaded</button>
+                <button class="mock-filter-btn active">🪑 Backrest</button>
+                <button class="mock-filter-btn active">♿ Step-free</button>
+                <button class="mock-filter-btn">💪 Armrests</button>
+              </div>
+
+              <!-- Simulated Map Display -->
+              <div class="preview-mock-map">
+                <div class="mock-pin pin-1" title="Maple Quarter Bench"><span>🪑</span></div>
+                <div class="mock-pin pin-2" title="Garden Rest Stop"><span>🌳</span></div>
+                <div class="mock-pin pin-3" title="Accessible Seat"><span>♿</span></div>
+              </div>
+
+              <div style="background: var(--bg-card); padding: 0.85rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); font-size: 0.82rem; color: var(--text-muted);">
+                <strong style="color: var(--text-main); display: block; margin-bottom: 0.2rem;">Maple Quarter Bench #04</strong>
+                <span>Step-free route • Canopy tree shade • Sturdy oak backrest</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Interactive Machine Learning Playground (K-Means Visualizer)
+       ========================================================================= -->
+  <section class="section" id="playground">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Interactive Machine Learning</span>
+        <h2 class="section-title">K-Means Clustering Visualizer</h2>
+        <p class="section-subtitle">
+          See the algorithm in action: watch centroids calculate means, update Voronoi partitions, and discover natural clusters in real time.
+        </p>
+      </div>
+
+      <div class="playground-card">
+        <div class="playground-grid">
+          
+          <!-- Left: Concept Explanation -->
+          <div class="playground-info">
+            <span class="badge badge-violet" style="margin-bottom: 0.85rem;">Unsupervised Learning Playground</span>
+            <h3>How Machines Find Patterns in Data</h3>
+            <p>
+              One of the concepts I’ve loved exploring is <strong>K-means clustering</strong>. Without any human supervision or labels, the algorithm partitions <em>N</em> observations into <em>K</em> distinct clusters based on mathematical proximity.
+            </p>
+
+            <ul class="kmeans-steps">
+              <li class="kmeans-step-item">
+                <span class="step-num">01</span>
+                <div><strong>Centroid Initialization:</strong> Select <em>K</em> initial cluster centers at random.</div>
+              </li>
+              <li class="kmeans-step-item">
+                <span class="step-num">02</span>
+                <div><strong>Assignment Step:</strong> Calculate Euclidean distance and assign each point to its nearest centroid.</div>
+              </li>
+              <li class="kmeans-step-item">
+                <span class="step-num">03</span>
+                <div><strong>Update Step:</strong> Move each centroid to the geometric mean of all points assigned to it. Repeat until convergence!</div>
+              </li>
+            </ul>
+
+            <div style="background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.3); padding: 1rem; border-radius: var(--radius-md); font-size: 0.88rem; color: var(--text-muted);">
+              💡 <strong style="color: var(--text-main);">Why this inspires me:</strong> Simple distance formulas give rise to emergent spatial intelligence.
+            </div>
+          </div>
+
+          <!-- Right: Interactive Canvas -->
+          <div class="canvas-wrapper">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span id="kmeansIterationText" style="font-size: 0.82rem; font-family: var(--font-mono); color: var(--accent-teal);">
+                Initialized points & centroids.
+              </span>
+              <span class="badge badge-neutral" style="font-size: 0.75rem;">2D Euclidean Space</span>
+            </div>
+
+            <!-- Canvas Element -->
+            <canvas id="kmeansCanvas"></canvas>
+
+            <!-- Controls Toolbar -->
+            <div class="canvas-controls">
+              <div class="cluster-select-group">
+                <label for="kmeansKSelect">Clusters (K):</label>
+                <select id="kmeansKSelect">
+                  <option value="2">K = 2</option>
+                  <option value="3" selected>K = 3</option>
+                  <option value="4">K = 4</option>
+                  <option value="5">K = 5</option>
+                </select>
+              </div>
+
+              <div style="display: flex; gap: 0.5rem;">
+                <button id="kmeansStepBtn" class="btn btn-primary btn-sm">
+                  <span>Step Algorithm</span> ⏩
+                </button>
+                <button id="kmeansResetBtn" class="btn btn-secondary btn-sm">
+                  <span>Reset Points</span> 🔄
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       All Prototypes & Projects Grid
+       ========================================================================= -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Hands-on Explorations</span>
+        <h2 class="section-title">Web Prototypes & Experiments</h2>
+        <p class="section-subtitle">
+          Projects built to explore meteorology data, accessibility mapping, and environmental care.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="projects-filter-bar">
+        <button class="filter-tab active" data-filter="all">All Projects</button>
+        <button class="filter-tab" data-filter="accessibility">Accessibility & Mobility</button>
+        <button class="filter-tab" data-filter="aiml">AI & Data Models</button>
+        <button class="filter-tab" data-filter="web">Web Tools & Health</button>
+      </div>
+
+      <!-- Dynamic Cards Grid (Rendered via app.js) -->
+      <div class="projects-grid" id="projectsContainer"></div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       What I'm Learning Section
+       ========================================================================= -->
+  <section class="section" id="learning">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Foundations in Progress</span>
+        <h2 class="section-title">What I’m Learning</h2>
+        <p class="section-subtitle">
+          Building strong fundamentals across machine intelligence, data visualization, and accessibility.
+        </p>
+      </div>
+
+      <div class="learning-grid">
+        <!-- Area 1: Machine Learning -->
+        <div class="learning-card">
+          <div class="learning-icon-box icon-box-violet">🧠</div>
+          <h3>Machine Learning Fundamentals</h3>
+          <p class="learning-personal-line">
+            “I love exploring algorithms like K-means clustering to see how machines uncover natural groupings and hidden structure in raw data.”
+          </p>
+          <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;">
+            Studying unsupervised clustering, distance metrics, mathematical variance, and model evaluation techniques to understand how algorithms make sense of data patterns.
+          </p>
+          <div class="learning-skills-chips">
+            <span class="badge badge-neutral">K-Means</span>
+            <span class="badge badge-neutral">Pattern Recognition</span>
+            <span class="badge badge-neutral">Euclidean Metrics</span>
+            <span class="badge badge-neutral">Python Basics</span>
+          </div>
+        </div>
+
+        <!-- Area 2: Data Visualization -->
+        <div class="learning-card">
+          <div class="learning-icon-box icon-box-teal">📊</div>
+          <h3>Data Visualization</h3>
+          <p class="learning-personal-line">
+            “Translating complex coordinates, atmospheric telemetry, and pressure gradients into clear visual stories that anyone can interpret at a glance.”
+          </p>
+          <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;">
+            Experimenting with interactive Leaflet.js maps, dynamic HTML5 canvas renderings, and time-series charts to make complex scientific data clear and digestible.
+          </p>
+          <div class="learning-skills-chips">
+            <span class="badge badge-neutral">Leaflet.js</span>
+            <span class="badge badge-neutral">HTML5 Canvas</span>
+            <span class="badge badge-neutral">Chart.js</span>
+            <span class="badge badge-neutral">Spatial Mapping</span>
+          </div>
+        </div>
+
+        <!-- Area 3: Accessible Web Design -->
+        <div class="learning-card">
+          <div class="learning-icon-box icon-box-amber">♿</div>
+          <h3>Accessible Web Design</h3>
+          <p class="learning-personal-line">
+            “Designing with empathy — ensuring high contrast, clean semantic structure, and considerate filters so technology works comfortably for every human being.”
+          </p>
+          <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;">
+            Building interfaces according to WCAG contrast standards, keyboard navigation, and specialized accessibility criteria like step-free routing.
+          </p>
+          <div class="learning-skills-chips">
+            <span class="badge badge-neutral">WCAG Contrast</span>
+            <span class="badge badge-neutral">Semantic HTML</span>
+            <span class="badge badge-neutral">Screen Reader Friendly</span>
+            <span class="badge badge-neutral">Responsive UX</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Contact & Collaboration Section
+       ========================================================================= -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Open to Collaborations & Ideas</h2>
+        <p class="section-subtitle">
+          I’m always happy to connect with other students, exchange ideas, and collaborate on beginner-friendly projects.
+        </p>
+      </div>
+
+      <div class="contact-layout">
+        
+        <!-- Channels & Info -->
+        <div class="contact-info">
+          <div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem;">Let’s build together 👋</h3>
+            <p>
+              Whether you're a fellow student exploring machine learning, interested in collaborating on accessibility tools, or just want to chat about AI and web prototypes, I'd love to hear from you.
+            </p>
+          </div>
+
+          <div class="contact-channels">
+            <a 
+            href="https://linkedin.com/in/deblina-pandit-563680423" target="_blank" class="channel-card">
+              <div class="channel-icon">💼</div>
+              <div class="channel-details">
+                <span>Professional Network</span>
+                <strong>Connect on LinkedIn</strong>
+              </div>
+            </a>
+
+            <a
+             href="https://github.com/deblinapandit2710" target="_blank" class="channel-card">
+              <div class="channel-icon">💻</div>
+              <div class="channel-details">
+                <span>Code & Projects</span>
+                <strong>Follow on GitHub</strong>
+              </div>
+            </a>
+
+            <a href="mailto:your-email@example.com" class="channel-card">
+              <div class="channel-icon">✉️</div>
+              <div class="channel-details">
+                <span>Direct Mail</span>
+                <strong>deblinapandit83@gmail.com</strong>
+              </div>
+            </a>
+          </div>
+
+          <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem;">
+            <span style="font-size: 0.82rem; font-weight: 700; color: var(--accent-teal); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.25rem;">
+              Currently Welcoming
+            </span>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">
+              Beginner-friendly open source, study circles for machine learning algorithms, and accessibility UI projects.
+            </p>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="contact-form-card">
+          <form id="portfolioContactForm">
+            <div class="form-group">
+              <label for="senderName">Your Name *</label>
+              <input type="text" id="senderName" class="form-control" placeholder="e.g. Alex Smith" required>
+            </div>
+
+            <div class="form-group">
+              <label for="senderEmail">Email Address *</label>
+              <input type="email" id="senderEmail" class="form-control" placeholder="alex@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="inquiryTopic">What’s this about?</label>
+              <select id="inquiryTopic" class="form-control">
+                <option value="Student Collaboration">Student Collaboration & Study</option>
+                <option value="Project Feedback">Feedback on "Where Can I Sit?"</option>
+                <option value="Open Source Ideas">Open Source Project Idea</option>
+                <option value="General Hello">Just saying hello!</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="senderMessage">Your Message *</label>
+              <textarea id="senderMessage" class="form-control" rows="4" placeholder="Hi Deblina, I saw your work on accessible mapping..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <span>Send Message</span> 🚀
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Footer
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <strong>Deblina</strong>
+        <p>First-Year B.Tech CSE (AI & ML) • Brainware University</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about" class="footer-link">About</a>
+        <a href="#featured" class="footer-link">Where Can I Sit?</a>
+        <a href="#playground" class="footer-link">K-Means Demo</a>
+        <a href="#projects" class="footer-link">Prototypes</a>
+        <a href="#contact" class="footer-link">Connect</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       Project Detail Modal Dialog
+       ========================================================================= -->
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close-btn" onclick="closeProjectModal()" aria-label="Close dialog">&times;</button>
+      
+      <span id="modalCategory" class="badge badge-teal" style="margin-bottom: 0.75rem;">Category</span>
+      <h3 id="modalTitle" style="font-size: 1.75rem; margin-bottom: 1rem;">Project Title</h3>
+      
+      <div id="modalBody">
+        <!-- Dynamically injected via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
